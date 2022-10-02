@@ -1,0 +1,53 @@
+header {
+   padding: 2%; 
+   background-color: rgba(0, 0, 255, 0.432);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 1%;
+    margin: 1%;
+    }
+
+h1 {
+    font-size: larger;
+    font-weight: bolder;
+}
+    
+.searchBox { 
+    grid-area: 1 / 1 / 3 / 2; 
+    background-color: yellow;
+}
+
+input {
+    width: 50%;
+    margin-left: 2%;
+}
+
+#citiesSearched {
+    margin-top: 10%;
+}
+
+#citiesSearchedBtn {
+    padding: 3%;
+    margin: 3%;
+    margin-left: -10%;
+}
+
+.currentWeather { 
+    grid-area: 1 / 2 / 2 / 7; 
+    padding: 5%;
+}
+
+.forecast { 
+    grid-area: 2 / 2 / 3 / 7;
+    padding: 5%;
+}
+
+.card {
+    margin: 3%;
+}
