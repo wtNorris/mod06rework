@@ -1,15 +1,14 @@
 var APIkey = '5133ceb0f2a1d71c6003e2c39af6728c';
-var date = moment().format('dddd, MMMM Do YYYY');
+var date = moment().format("dddd, MMMM Do YYYY");
 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 let lat;
 let lon;
+moment(); // calls date
 
 // buttons
 var $searchBtn = $('#searchBtn');
 var fivedayForeC = $('.fivedayForeC');
 var searchCity = $('#searchCity');
-
-moment(); // calls date
 
 // search button calls for city + api converts to lat/lon
 $searchBtn.on("click", function (event) {
